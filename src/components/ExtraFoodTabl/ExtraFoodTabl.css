@@ -1,6 +1,6 @@
-.extraFood {
+.extraFoodTabl {
   width: 250px;
-  height: 150px;
+  min-height: 150px;
   border: 1px solid silver;
   border-radius: 0px 0px 5px 5px;
 }
@@ -19,10 +19,6 @@
   font-weight: bold;
 }
 
-.dataFood span {
-  margin-left: 28px;
-  margin-right: 72px;
-}
 .strip {
   width: 220px;
   border: solid 1px silver;

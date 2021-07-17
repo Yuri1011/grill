@@ -1,20 +1,19 @@
 import React from "react";
+import { ExtraFood } from "../ExtraFood/ExtraFood";
 import "./ExtraFoodTabl.css";
 
 export function ExtraFoodTabl(props) {
   return (
     <div>
       <p>items out of grill</p>
-      <div className="extraFood">
+      <div className="extraFoodTabl">
         <div className="typeSize">
           <span className="type">Type</span>
           <span className="size">Size</span>
         </div>
         <hr className="strip" />
-        <div className="dataFood">
-          <span>title</span>
-          <span>50x30</span>
-        </div>
+
+        <ExtraFood foodData={props.foodData} />
       </div>
     </div>
   );

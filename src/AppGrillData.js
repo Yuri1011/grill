@@ -39,11 +39,7 @@ function AppGrillData() {
   return (
     <div className="appBlock">
       <Grill width={data.grill.width} height={data.grill.height} />
-      <ExtraFoodData
-        title={data.grill.grillItems.map((elem) => elem.title)}
-        width={data.grill.grillItems.map((elem) => elem.width)}
-        height={data.grill.grillItems.map((elem) => elem.height)}
-      />
+      <ExtraFoodData foodData={data.grill.grillItems} />
     </div>
   );
 }
