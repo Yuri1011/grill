@@ -1,5 +1,5 @@
 import "./AppGrillData.css";
-import { ExtraFood } from "./components/ExtraFood/ExtraFood";
+import { ExtraFoodData } from "./components/ExtraFoodData/ExtraFoodData";
 import { Grill } from "./components/Grill/Grill";
 
 function AppGrillData() {
@@ -39,7 +39,11 @@ function AppGrillData() {
   return (
     <div className="appBlock">
       <Grill width={data.grill.width} height={data.grill.height} />
-      <ExtraFood />
+      <ExtraFoodData
+        title={data.grill.grillItems.map((elem) => elem.title)}
+        width={data.grill.grillItems.map((elem) => elem.width)}
+        height={data.grill.grillItems.map((elem) => elem.height)}
+      />
     </div>
   );
 }

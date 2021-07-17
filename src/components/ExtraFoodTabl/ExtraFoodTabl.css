@@ -8,10 +8,20 @@
   display: flex;
   justify-content: space-around;
 }
-.extraFood span {
+.type {
   margin-right: 40px;
   margin-top: 10px;
   font-weight: bold;
+}
+.size {
+  margin-right: 40px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.dataFood span {
+  margin-left: 28px;
+  margin-right: 72px;
 }
 .strip {
   width: 220px;
