@@ -1,0 +1,29 @@
+.extraFood {
+  width: 250px;
+  height: 150px;
+  border: 1px solid silver;
+  border-radius: 0px 0px 5px 5px;
+}
+.typeSize {
+  display: flex;
+  justify-content: space-around;
+}
+.extraFood span {
+  margin-right: 40px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.strip {
+  width: 220px;
+  border: solid 1px silver;
+  background-color: silver;
+}
+p {
+  margin: 0;
+  padding: 10px;
+  background-color: whitesmoke;
+  border: 1px solid silver;
+  border-bottom: none;
+  border-radius: 5px 5px 0px 0px;
+  font-size: 16px;
+}
