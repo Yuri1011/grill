@@ -1,4 +1,5 @@
 import React from "react";
+import { ProductFood } from "../ProductFood/ProductFood";
 
 export function Grill(props) {
   const styleGrill = {
@@ -9,5 +10,9 @@ export function Grill(props) {
     borderRadius: "5px",
   };
 
-  return <div style={styleGrill}></div>;
+  return (
+    <div style={styleGrill}>
+      <ProductFood products={props.products} />
+    </div>
+  );
 }

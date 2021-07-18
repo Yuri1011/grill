@@ -36,9 +36,10 @@ function AppGrillData() {
     },
   };
 
+ 
   return (
     <div className="appBlock">
-      <Grill width={data.grill.width} height={data.grill.height} />
+      <Grill width={data.grill.width} height={data.grill.height} products={data.grill.grillItems}/>
       <ExtraFoodData foodData={data.grill.grillItems} />
     </div>
   );
