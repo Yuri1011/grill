@@ -35,16 +35,26 @@ function AppGrillData() {
       ],
     },
   };
-  data.grill.grillItems.sort((a, b) => {
+
+  const newObj = JSON.stringify(data);
+  const newData = JSON.parse(newObj);
+
+  data.grill.grillItems.map((item) => {
+    for (let i = 0; i < item.count - 1; i++) {
+      newData.grill.grillItems.push(item);
+    }
+  });
+
+  newData.grill.grillItems.sort((a, b) => {
     return b.width - a.width;
   });
 
   return (
     <div className="appBlock">
       <Grill
-        width={data.grill.width}
-        height={data.grill.height}
-        grillItems={data.grill.grillItems}
+        width={newData.grill.width}
+        height={newData.grill.height}
+        grillItems={newData.grill.grillItems}
       />
       <ExtraFoodData grillItems={data.grill.grillItems} />
     </div>
