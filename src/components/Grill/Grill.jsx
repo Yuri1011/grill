@@ -12,7 +12,7 @@ export function Grill(props) {
 
   return (
     <div style={styleGrill}>
-      <ProductFood products={props.products} />
+      <ProductFood grillItems={props.grillItems} />
     </div>
   );
 }

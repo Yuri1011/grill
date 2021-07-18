@@ -35,12 +35,18 @@ function AppGrillData() {
       ],
     },
   };
+  data.grill.grillItems.sort((a, b) => {
+    return b.width - a.width;
+  });
 
- 
   return (
     <div className="appBlock">
-      <Grill width={data.grill.width} height={data.grill.height} products={data.grill.grillItems}/>
-      <ExtraFoodData foodData={data.grill.grillItems} />
+      <Grill
+        width={data.grill.width}
+        height={data.grill.height}
+        grillItems={data.grill.grillItems}
+      />
+      <ExtraFoodData grillItems={data.grill.grillItems} />
     </div>
   );
 }
