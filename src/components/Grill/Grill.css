@@ -1,5 +1,7 @@
 .grill {
+  /* display: block; */
   border-radius: 5px;
   border: 1px solid silver;
-  background-color: whiteSmoke,
+  background-color: whiteSmoke;
+  /* column-count: 8; */
 }

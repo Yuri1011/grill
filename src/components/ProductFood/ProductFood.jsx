@@ -3,7 +3,7 @@ import "./ProductFood.css";
 
 export function ProductFood(props) {
   const products = props.grillItems;
-
+console.log()
   return products.map((elem) => {
     return (
       <div

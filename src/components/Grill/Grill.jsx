@@ -3,6 +3,7 @@ import "./Grill.css";
 import { ProductFood } from "../ProductFood/ProductFood";
 
 export function Grill(props) {
+
   return (
     <div
       className="grill"
