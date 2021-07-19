@@ -1,0 +1,7 @@
+.productFood {
+  float: left;
+  background-color: green;
+  margin: 1px;
+  border-radius: 5px;
+  text-align: center;
+}
