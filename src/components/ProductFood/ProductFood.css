@@ -1,7 +1,7 @@
 .productFood {
-  float: left;
-  margin: 1px;
-  border-radius: 5px;
   /* display: inline-block; */
+  /* float: left; */
+  margin: 0px;
+  border-radius: 5px;
   background-color: green;
 }

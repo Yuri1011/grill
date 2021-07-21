@@ -17,7 +17,7 @@ function AppGrillData() {
         {
           width: 140,
           height: 140,
-          count: 2,
+          count: 3,
           title: "Sausage",
         },
         {

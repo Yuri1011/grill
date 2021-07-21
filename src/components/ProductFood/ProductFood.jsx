@@ -2,13 +2,14 @@ import React from "react";
 import "./ProductFood.css";
 
 export function ProductFood(props) {
-  const products = props.grillItems;
-console.log()
-  return products.map((elem) => {
+  return props.firstLine.map((elem, index) => {
     return (
       <div
+        key={index}
+        id="productFood"
         className="productFood"
         style={{
+          float: "left",
           width: elem.width,
           height: elem.height,
         }}
