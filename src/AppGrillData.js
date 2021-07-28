@@ -1,9 +1,10 @@
 import "./AppGrillData.css";
 import { Grill } from "./components/Grill/Grill";
+import { useState } from "react";
 
 function AppGrillData() {
-  
-  let data = {
+  const [errorMessage, setErrorMessage] = useState("");
+  const [data, setData] = useState({
     grill: {
       width: 500,
       height: 200,
@@ -34,10 +35,17 @@ function AppGrillData() {
         },
       ],
     },
-  };
+  });
 
   const updateValueText = (event) => {
-    data = event.target.value;
+    let obj;
+    try {
+      obj = JSON.parse(event.target.value);
+      setData(obj);
+      setErrorMessage("");
+    } catch (error) {
+      setErrorMessage("Incorrect JSON format");
+    }
   };
 
   if (data) {
@@ -53,10 +61,12 @@ function AppGrillData() {
     newData.grill.grillItems.sort((a, b) => {
       return b.height - a.height;
     });
+
     return (
       <Grill
         width={newData.grill.width}
         height={newData.grill.height}
+        errorMessage={errorMessage}
         grillItems={newData.grill.grillItems}
         updateValueText={updateValueText}
       />

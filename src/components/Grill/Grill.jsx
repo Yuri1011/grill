@@ -5,33 +5,33 @@ import { ProductFood } from "../ProductFood/ProductFood";
 import { ExtraFoodTabl } from "../ExtraFoodTabl/ExtraFoodTabl";
 
 export function Grill(props) {
-  const t = `{
-  "grill": {
-    "width": 500,
-    "height": 200,
-    "grillItems": [{
-      "width": 50,
-      "height": 30,
-      "count": 15,
-      "title": "Steak"
-    }, {
-      "width": 140,
-      "height": 140,
-      "count": 2,
-      "title": "Sausage"
-    }, {
-      "width": 130,
-      "height": 60,
-      "count": 4,
-      "title": "Tomato"
-    }, {
-      "width": 20,
-      "height": 10,
-      "count": 37,
-      "title": "Veal"
-    }]
-  }
-}`;
+  const defaultValue = `{
+    "grill": {
+      "width": 500,
+      "height": 200,
+      "grillItems": [{
+        "width": 50,
+        "height": 30,
+        "count": 15,
+        "title": "Steak"
+      }, {
+        "width": 140,
+        "height": 140,
+        "count": 2,
+        "title": "Sausage"
+      }, {
+        "width": 130,
+        "height": 60,
+        "count": 4,
+        "title": "Tomato"
+      }, {
+        "width": 20,
+        "height": 10,
+        "count": 37,
+        "title": "Veal"
+      }]
+    }
+  }`;
 
   let data = collectItemsToDisplay(props);
   let secondIteration = {
@@ -61,15 +61,14 @@ export function Grill(props) {
         <div style={{ display: "block", height: data2[0].busyHeight }}>
           <ProductFood row={data2[0].items} />
         </div>
-
+        <span style={{ color: "red" }}>{props.errorMessage}</span>
         <div>
           <textarea
             className="textar"
             id="text"
             rows="27"
             cols="68"
-            // value=""
-            defaultValue={t}
+            defaultValue={defaultValue}
             onChange={props.updateValueText}
           ></textarea>
         </div>
