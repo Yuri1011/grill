@@ -44,8 +44,9 @@ export function Grill(props) {
   let dataInTable = data2[1].items;
 
   return (
-    <>
+    <div className="grillContainer">
       <div
+        className="grillBlock"
         id="grill"
         className="grill"
         style={{
@@ -60,18 +61,21 @@ export function Grill(props) {
         <div style={{ display: "block", height: "60px" }}>
           <ProductFood row={data2[0].items} />
         </div>
+
+        <div>
+          <textarea
+            className="textar"
+            id="text"
+            rows="27"
+            cols="68"
+            // value=""
+            defaultValue={t}
+            onChange={props.updateValueText}
+          ></textarea>
+        </div>
       </div>
 
-      <textarea
-        id="text"
-        rows="27"
-        cols="68"
-        // value=""
-        defaultValue={t}
-        onChange={props.updateValueText}
-      ></textarea>
-
       <ExtraFoodTabl grillItems={dataInTable} />
-    </>
+    </div>
   );
 }

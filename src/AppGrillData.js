@@ -53,16 +53,12 @@ function AppGrillData() {
       return b.height - a.height;
     });
     return (
-      <>
-        <div className="appBlock">
           <Grill
             width={newData.grill.width}
             height={newData.grill.height}
             grillItems={newData.grill.grillItems}
             updateValueText={updateValueText}
           />
-        </div>
-      </>
     );
   }
 }

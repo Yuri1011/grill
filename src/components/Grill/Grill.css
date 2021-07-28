@@ -7,3 +7,15 @@
   background-color: whiteSmoke;
   box-sizing: content-box;
 }
+.grillBlock {
+  display: flex;
+  flex-direction: column;
+}
+.grillContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.textar {
+  margin-top: 20px;
+}
