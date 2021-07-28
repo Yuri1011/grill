@@ -2,6 +2,7 @@ import "./AppGrillData.css";
 import { Grill } from "./components/Grill/Grill";
 
 function AppGrillData() {
+  
   let data = {
     grill: {
       width: 500,
@@ -53,12 +54,12 @@ function AppGrillData() {
       return b.height - a.height;
     });
     return (
-          <Grill
-            width={newData.grill.width}
-            height={newData.grill.height}
-            grillItems={newData.grill.grillItems}
-            updateValueText={updateValueText}
-          />
+      <Grill
+        width={newData.grill.width}
+        height={newData.grill.height}
+        grillItems={newData.grill.grillItems}
+        updateValueText={updateValueText}
+      />
     );
   }
 }

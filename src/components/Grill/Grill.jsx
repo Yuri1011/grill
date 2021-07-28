@@ -7,7 +7,7 @@ import { ExtraFoodTabl } from "../ExtraFoodTabl/ExtraFoodTabl";
 export function Grill(props) {
   const t = `{
   "grill": {
-    "width": 400,
+    "width": 500,
     "height": 200,
     "grillItems": [{
       "width": 50,
@@ -54,11 +54,11 @@ export function Grill(props) {
           height: props.height,
         }}
       >
-        <div style={{ display: "block", height: "140px" }}>
+        <div style={{ display: "block", height: data[0].busyHeight }}>
           <ProductFood row={data[0].items} />
         </div>
 
-        <div style={{ display: "block", height: "60px" }}>
+        <div style={{ display: "block", height: data2[0].busyHeight }}>
           <ProductFood row={data2[0].items} />
         </div>
 
