@@ -1,10 +1,8 @@
 import "./AppGrillData.css";
-import { ExtraFoodTabl } from "./components/ExtraFoodTabl/ExtraFoodTabl";
 import { Grill } from "./components/Grill/Grill";
 
 function AppGrillData() {
-
-  const data = {
+  let data = {
     grill: {
       width: 500,
       height: 200,
@@ -37,30 +35,36 @@ function AppGrillData() {
     },
   };
 
-  const newObj = JSON.stringify(data);
-  const newData = JSON.parse(newObj);
+  const updateValueText = (event) => {
+    data = event.target.value;
+  };
 
-  data.grill.grillItems.map((item) => {
-    for (let i = 0; i < item.count - 1; i++) {
-      newData.grill.grillItems.push(item);
-    }
-  });
+  if (data) {
+    const newObj = JSON.stringify(data);
+    const newData = JSON.parse(newObj);
 
-  newData.grill.grillItems.sort((a, b) => {
-    return b.height - a.height;
-  });
+    data.grill.grillItems.map((item) => {
+      for (let i = 0; i < item.count - 1; i++) {
+        newData.grill.grillItems.push(item);
+      }
+    });
 
-  return (
-    <>
-      <div className="appBlock">
-        <Grill
-          width={newData.grill.width}
-          height={newData.grill.height}
-          grillItems={newData.grill.grillItems}
-        />
-      </div>
-    </>
-  );
+    newData.grill.grillItems.sort((a, b) => {
+      return b.height - a.height;
+    });
+    return (
+      <>
+        <div className="appBlock">
+          <Grill
+            width={newData.grill.width}
+            height={newData.grill.height}
+            grillItems={newData.grill.grillItems}
+            updateValueText={updateValueText}
+          />
+        </div>
+      </>
+    );
+  }
 }
 
 export default AppGrillData;

@@ -5,8 +5,6 @@ import { ProductFood } from "../ProductFood/ProductFood";
 import { ExtraFoodTabl } from "../ExtraFoodTabl/ExtraFoodTabl";
 
 export function Grill(props) {
-
-  
   const t = `{
   "grill": {
     "width": 400,
@@ -64,7 +62,14 @@ export function Grill(props) {
         </div>
       </div>
 
-      <textarea id="text" rows="27" cols="68" ></textarea>
+      <textarea
+        id="text"
+        rows="27"
+        cols="68"
+        // value=""
+        defaultValue={t}
+        onChange={props.updateValueText}
+      ></textarea>
 
       <ExtraFoodTabl grillItems={dataInTable} />
     </>
