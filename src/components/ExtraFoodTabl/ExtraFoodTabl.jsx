@@ -1,6 +1,6 @@
 import React from "react";
-import { ExtraFood } from "../ExtraFood/ExtraFood";
 import "./ExtraFoodTabl.css";
+import { ExtraFoodData } from "../ExtraFoodData/ExtraFoodData";
 
 export function ExtraFoodTabl(props) {
   return (
@@ -12,9 +12,9 @@ export function ExtraFoodTabl(props) {
           <span className="size">Size</span>
         </div>
         <hr className="strip" />
-
-        <ExtraFood foodData={props.foodData} />
+        <ExtraFoodData grillItems={props.grillItems} />
       </div>
     </div>
   );
 }
+

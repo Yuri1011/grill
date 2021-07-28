@@ -1,8 +1,9 @@
 import "./AppGrillData.css";
-import { ExtraFoodData } from "./components/ExtraFoodData/ExtraFoodData";
+import { ExtraFoodTabl } from "./components/ExtraFoodTabl/ExtraFoodTabl";
 import { Grill } from "./components/Grill/Grill";
 
 function AppGrillData() {
+
   const data = {
     grill: {
       width: 500,
@@ -17,7 +18,7 @@ function AppGrillData() {
         {
           width: 140,
           height: 140,
-          count: 3,
+          count: 2,
           title: "Sausage",
         },
         {
@@ -46,18 +47,19 @@ function AppGrillData() {
   });
 
   newData.grill.grillItems.sort((a, b) => {
-    return b.width - a.width;
+    return b.height - a.height;
   });
 
   return (
-    <div className="appBlock">
-      <Grill
-        width={newData.grill.width}
-        height={newData.grill.height}
-        grillItems={newData.grill.grillItems}
-      />
-      <ExtraFoodData grillItems={data.grill.grillItems} />
-    </div>
+    <>
+      <div className="appBlock">
+        <Grill
+          width={newData.grill.width}
+          height={newData.grill.height}
+          grillItems={newData.grill.grillItems}
+        />
+      </div>
+    </>
   );
 }
 

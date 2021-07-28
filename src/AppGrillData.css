@@ -3,3 +3,8 @@
   margin: 20px;
   justify-content: space-around;
 }
+textarea {
+  position: absolute;
+  top: 250px;
+  left: 57px;
+}
