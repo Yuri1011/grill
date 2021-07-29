@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/grill/static/css/main.186b9172.chunk.css",
-    "main.js": "/grill/static/js/main.d23bda0f.chunk.js",
-    "main.js.map": "/grill/static/js/main.d23bda0f.chunk.js.map",
+    "main.js": "/grill/static/js/main.ba25aa1f.chunk.js",
+    "main.js.map": "/grill/static/js/main.ba25aa1f.chunk.js.map",
     "runtime-main.js": "/grill/static/js/runtime-main.9bc1b585.js",
     "runtime-main.js.map": "/grill/static/js/runtime-main.9bc1b585.js.map",
-    "static/js/2.fd7ff186.chunk.js": "/grill/static/js/2.fd7ff186.chunk.js",
-    "static/js/2.fd7ff186.chunk.js.map": "/grill/static/js/2.fd7ff186.chunk.js.map",
+    "static/js/2.789681de.chunk.js": "/grill/static/js/2.789681de.chunk.js",
+    "static/js/2.789681de.chunk.js.map": "/grill/static/js/2.789681de.chunk.js.map",
     "index.html": "/grill/index.html",
     "static/css/main.186b9172.chunk.css.map": "/grill/static/css/main.186b9172.chunk.css.map",
-    "static/js/2.fd7ff186.chunk.js.LICENSE.txt": "/grill/static/js/2.fd7ff186.chunk.js.LICENSE.txt"
+    "static/js/2.789681de.chunk.js.LICENSE.txt": "/grill/static/js/2.789681de.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9bc1b585.js",
-    "static/js/2.fd7ff186.chunk.js",
+    "static/js/2.789681de.chunk.js",
     "static/css/main.186b9172.chunk.css",
-    "static/js/main.d23bda0f.chunk.js"
+    "static/js/main.ba25aa1f.chunk.js"
   ]
 }
