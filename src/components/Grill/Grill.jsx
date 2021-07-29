@@ -45,26 +45,26 @@ export function Grill(props) {
 
   return (
     <div className="grillContainer">
-      <div
-        className="grillBlock"
-        id="grill"
-        className="grill"
-        style={{
-          width: props.width,
-          height: props.height,
-        }}
-      >
-        <div style={{ display: "block", height: data[0].busyHeight }}>
-          <ProductFood row={data[0].items} />
-        </div>
+      <div className="grillBlock">
+        <div
+          id="grill"
+          className="grill"
+          style={{
+            width: props.width,
+            height: props.height,
+          }}
+        >
+          <div style={{ display: "block", height: data[0].busyHeight }}>
+            <ProductFood row={data[0].items} />
+          </div>
 
-        <div style={{ display: "block", height: data2[0].busyHeight }}>
-          <ProductFood row={data2[0].items} />
+          <div style={{ display: "block", height: data2[0].busyHeight }}>
+            <ProductFood row={data2[0].items} />
+          </div>
         </div>
         <span style={{ color: "red" }}>{props.errorMessage}</span>
-        <div>
+        <div className="textar">
           <textarea
-            className="textar"
             id="text"
             rows="27"
             cols="68"
